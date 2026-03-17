@@ -788,6 +788,22 @@ main {
   filter: brightness(1.05);
 }
 
+.scroll-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 84px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
+  z-index: 40;
+}
+
 @media (max-width: 900px) {
   .nav {
     gap: 10px;
@@ -799,7 +815,7 @@ main {
 
   .hero-section {
     flex-direction: column-reverse;
-    padding: 26px 20px 30px;
+    padding: 26px 8px 30px;
   }
 
   .two-column {
@@ -808,8 +824,25 @@ main {
 
   .skills-grid,
   .cards-grid,
-  .contact-grid {
+  .contact-grid,
+  .contact-form,
+  .projects-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .whatsapp-widget {
+    right: 16px;
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .whatsapp-input {
+    min-width: 0;
+  }
+
+  .scroll-top-btn {
+    right: 16px;
+    bottom: 76px;
   }
 }
 

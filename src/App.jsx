@@ -448,6 +448,14 @@ function App() {
           Send
         </button>
       </form>
+
+      <button
+        type="button"
+        className="scroll-top-btn"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        ↑
+      </button>
     </div>
   )
 }
