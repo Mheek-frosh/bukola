@@ -31,7 +31,6 @@ const sectionTitle = (title, subtitle) => (
 function App() {
   return (
     <div className="page">
-      <div className="page-gradient"></div>
       <header className="nav">
         <div className="nav-left">
           <span className="nav-name">BUKOLA</span>
