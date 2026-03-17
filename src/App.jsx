@@ -375,6 +375,34 @@ function App() {
                 <p className="contact-plain">Plot 617, Sunday Adewusi Street, Guzape, Abuja</p>
               </div>
             </div>
+
+            <form className="contact-form">
+              <div className="contact-field">
+                <label className="field-label" htmlFor="phone">
+                  Phone number
+                </label>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="field-input"
+                />
+              </div>
+              <div className="contact-field full">
+                <label className="field-label" htmlFor="message">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Share a bit about your project, role or question…"
+                  className="field-input field-textarea"
+                ></textarea>
+              </div>
+              <button type="submit" className="contact-submit">
+                Send message
+              </button>
+            </form>
           </div>
         </motion.section>
       </main>
