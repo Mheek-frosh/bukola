@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import bukImg from './assets/buk.png'
 import './App.css'
@@ -29,6 +30,17 @@ const sectionTitle = (title, subtitle) => (
 )
 
 function App() {
+  const [whatsAppMessage, setWhatsAppMessage] = useState('')
+
+  const handleWhatsAppSend = (e) => {
+    e.preventDefault()
+    if (!whatsAppMessage.trim()) return
+    const phone = '2349114086683'
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(whatsAppMessage.trim())}`
+    window.open(url, '_blank')
+    setWhatsAppMessage('')
+  }
+
   return (
     <div className="page">
       <header className="nav">
@@ -412,6 +424,30 @@ function App() {
         <span className="footer-dot"></span>
         <span>Designed with care and data.</span>
       </footer>
+
+      <form className="whatsapp-widget" onSubmit={handleWhatsAppSend}>
+        <button
+          type="button"
+          className="whatsapp-icon"
+          onClick={() => {
+            const phone = '2349114086683'
+            const url = `https://wa.me/${phone}`
+            window.open(url, '_blank')
+          }}
+        >
+          WA
+        </button>
+        <input
+          className="whatsapp-input"
+          type="text"
+          placeholder="Chat with me on WhatsApp…"
+          value={whatsAppMessage}
+          onChange={(e) => setWhatsAppMessage(e.target.value)}
+        />
+        <button type="submit" className="whatsapp-send">
+          Send
+        </button>
+      </form>
     </div>
   )
 }

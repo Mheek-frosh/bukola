@@ -730,6 +730,64 @@ main {
   background-color: rgba(148, 163, 184, 0.8);
 }
 
+.whatsapp-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px 8px 8px;
+  border-radius: 999px;
+  background-color: #f9fafb;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.35);
+  border: 1px solid #e5e7eb;
+  z-index: 50;
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: #22c55e;
+  color: #f9fafb;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-input {
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  padding: 4px 2px;
+  min-width: 180px;
+  background: transparent;
+  color: #111827;
+}
+
+.whatsapp-input::placeholder {
+  color: #9ca3af;
+}
+
+.whatsapp-send {
+  border-radius: 999px;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #f9fafb;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.whatsapp-send:hover {
+  filter: brightness(1.05);
+}
+
 @media (max-width: 900px) {
   .nav {
     gap: 10px;
