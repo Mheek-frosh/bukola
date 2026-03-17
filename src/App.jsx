@@ -247,37 +247,43 @@ function App() {
         >
           <h2 className="projects-title">My recent projects</h2>
           <p className="projects-subtitle">
-            Here are some projects where I&apos;ve used research, data and structured documentation
-            to support better decisions and smoother operations.
+            A snapshot of how I&apos;ve used research, data and documentation to make day‑to‑day
+            work clearer and more organized.
           </p>
 
           <div className="projects-layout">
             <div className="projects-list">
               <div className="project-item">
                 <div className="project-line"></div>
-                <h3 className="project-heading">Document workflow improvement – SRMS</h3>
-                <p className="project-text">
-                  Mapped current document handling steps, identified delays and duplicated work,
-                  and supported a new workflow that reduced manual hand‑offs and improved tracking.
-                </p>
+                <div>
+                  <h3 className="project-heading">Document workflow improvement – SRMS</h3>
+                  <p className="project-text">
+                    Mapped current document handling, identified delays and duplicated work, and
+                    supported a new workflow that reduced manual hand‑offs and improved tracking.
+                  </p>
+                </div>
               </div>
 
               <div className="project-item">
                 <div className="project-line"></div>
-                <h3 className="project-heading">Reporting dashboard support – SRMS</h3>
-                <p className="project-text">
-                  Helped collect and structure operational data, defined simple metrics and created
-                  presentation-ready summaries for management reviews.
-                </p>
+                <div>
+                  <h3 className="project-heading">Reporting dashboard support – SRMS</h3>
+                  <p className="project-text">
+                    Helped collect and structure operational data, define simple metrics and create
+                    presentation‑ready summaries for management reviews.
+                  </p>
+                </div>
               </div>
 
               <div className="project-item">
                 <div className="project-line faint"></div>
-                <h3 className="project-heading faint">Service request tracking (concept)</h3>
-                <p className="project-text faint">
-                  Concept for a centralized log of requests, status and owners to make follow‑up
-                  easier for operations and admin teams.
-                </p>
+                <div>
+                  <h3 className="project-heading faint">Service request tracking (concept)</h3>
+                  <p className="project-text faint">
+                    Concept for a centralized log of requests, status and owners to make follow‑up
+                    easier for operations and admin teams.
+                  </p>
+                </div>
               </div>
             </div>
 
