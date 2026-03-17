@@ -94,32 +94,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 48px;
   margin-top: 46px;
+  padding: 40px 38px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #fec6e4, #f973c9);
+  box-shadow: 0 26px 60px rgba(244, 63, 94, 0.35);
 }
 
 .hero-photo-card {
-  flex: 0 0 320px;
-  max-width: 340px;
-  border-radius: 28px;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-  background: radial-gradient(circle at 50% 0, rgba(59, 130, 246, 0.4), transparent 65%),
-    rgba(15, 23, 42, 0.96);
-  padding: 12px 12px 16px;
-  box-shadow: var(--shadow-soft);
+  flex: 0 0 340px;
+  max-width: 360px;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .hero-photo {
   width: 100%;
-  border-radius: 24px;
-  object-fit: cover;
+  max-width: 320px;
   display: block;
 }
 
 .hero-text {
   flex: 1;
+  color: #111827;
 }
 
 .hero-text h1 {
@@ -130,7 +129,7 @@
 }
 
 .highlight {
-  background: linear-gradient(135deg, #a855f7, #22d3ee);
+  background: linear-gradient(135deg, #7c3aed, #e11d48);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -140,13 +139,13 @@
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-soft);
+  color: #6b21a8;
 }
 
 .hero-tagline {
   font-size: 0.98rem;
-  color: var(--text-muted);
-  max-width: 36rem;
+  color: #1f2937;
+  max-width: 28rem;
 }
 
 .hero-actions {
@@ -171,9 +170,9 @@
 }
 
 .primary-btn {
-  color: #0f172a;
-  background: linear-gradient(135deg, #22d3ee, #a855f7);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
+  color: #f9fafb;
+  background: linear-gradient(135deg, #7c3aed, #e11d48);
+  box-shadow: 0 18px 40px rgba(190, 24, 93, 0.6);
 }
 
 .primary-btn:hover {
@@ -181,9 +180,9 @@
 }
 
 .ghost-btn {
-  color: var(--text-main);
-  border-color: rgba(148, 163, 184, 0.5);
-  background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.35), transparent 55%);
+  color: #111827;
+  border-color: rgba(15, 23, 42, 0.4);
+  background-color: rgba(248, 250, 252, 0.7);
 }
 
 .ghost-btn:hover {
@@ -196,23 +195,21 @@
   gap: 20px;
   padding: 18px 16px;
   border-radius: 18px;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  background: radial-gradient(circle at 0 0, rgba(30, 64, 175, 0.55), transparent 65%),
-    radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95));
-  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background-color: rgba(248, 250, 252, 0.8);
 }
 
 .meta-label {
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-soft);
+  color: #6b21a8;
   margin-bottom: 4px;
 }
 
 .meta-value {
   font-size: 0.9rem;
-  color: var(--text-main);
+  color: #111827;
 }
 
 /* removed floating accent card for a simpler hero */
@@ -432,7 +429,8 @@
   }
 
   .hero-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 26px 20px 30px;
   }
 
   .two-column {

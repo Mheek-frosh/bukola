@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import bukImg from './assets/buk.png'
 import './App.css'
 
 const containerVariants = {
@@ -57,11 +58,7 @@ function App() {
           variants={containerVariants}
         >
           <motion.div className="hero-photo-card" variants={fadeInUp}>
-            <img
-              src="/bukola-hero.png"
-              alt="Portrait of Adepoju Bukola"
-              className="hero-photo"
-            />
+            <img src={bukImg} alt="Portrait of Adepoju Bukola" className="hero-photo" />
           </motion.div>
 
           <motion.div className="hero-text" variants={itemVariants}>
