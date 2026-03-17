@@ -34,18 +34,16 @@ function App() {
       <div className="page-gradient"></div>
       <header className="nav">
         <div className="nav-left">
-          <span className="nav-dot"></span>
-          <span className="nav-name">Adepoju Bukola</span>
+          <span className="nav-name">BUKOLA</span>
         </div>
         <nav className="nav-links">
           <a href="#about">About</a>
+          <a href="#projects">Works</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Highlights</a>
           <a href="#contact">Contact</a>
         </nav>
         <a href="#contact" className="nav-cta">
-          Let&apos;s work together
+          Download my résumé ↓
         </a>
       </header>
 
@@ -57,42 +55,42 @@ function App() {
           animate="visible"
           variants={containerVariants}
         >
-          <motion.div className="hero-photo-card" variants={fadeInUp}>
-            <img src={bukImg} alt="Portrait of Adepoju Bukola" className="hero-photo" />
-          </motion.div>
-
           <motion.div className="hero-text" variants={itemVariants}>
-            <p className="eyebrow">Junior Business Analyst · Abuja, Nigeria</p>
-            <h1>
-              Turning <span className="highlight">data</span> into
+            <p className="eyebrow">Junior Business Analyst</p>
+            <h1 className="hero-heading">
+              Hi I&apos;m <span className="hero-name">BUKOLA,</span>
               <br />
-              confident business decisions.
+              a business analyst
+              <br />
+              I create <span className="highlight">DATA‑DRIVEN SOLUTIONS</span>
+              <br />
+              for organizations
             </h1>
             <p className="hero-tagline">
-              Detail-oriented Political Science graduate specializing in research, data interpretation,
-              and process optimization. Currently helping organizations streamline document workflows
-              and make smarter, data-driven decisions.
+              I help teams understand what their data is saying, organize their processes, and
+              make confident decisions that actually match how people work day to day.
             </p>
 
             <div className="hero-actions">
               <a href="#contact" className="primary-btn">
-                Book a conversation
+                Get in touch →
               </a>
-              <a href="#experience" className="ghost-btn">
-                View experience
+              <a href="#projects" className="ghost-btn">
+                View my work
               </a>
             </div>
 
-            <div className="hero-meta">
-              <div>
-                <p className="meta-label">Location</p>
-                <p className="meta-value">Guzape, Abuja, Nigeria</p>
-              </div>
-              <div>
-                <p className="meta-label">Open to</p>
-                <p className="meta-value">Business Analyst · Operations · Research roles</p>
-              </div>
+            <div className="hero-socials">
+              <a href="mailto:bukolaadepoju0@gmail.com">Email</a>
+              <span>—</span>
+              <span>LinkedIn</span>
+              <span>—</span>
+              <span>Resume</span>
             </div>
+          </motion.div>
+
+          <motion.div className="hero-photo-card" variants={fadeInUp}>
+            <img src={bukImg} alt="Portrait of Adepoju Bukola" className="hero-photo" />
           </motion.div>
         </motion.section>
 

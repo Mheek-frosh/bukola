@@ -12,7 +12,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 14px 18px;
-  border-radius: 999px;
   border: none;
   background: transparent;
   position: sticky;
@@ -34,9 +33,10 @@
 }
 
 .nav-name {
-  font-size: 0.9rem;
-  letter-spacing: 0.13em;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-weight: 700;
   color: #111827;
 }
 
@@ -44,19 +44,19 @@
   display: flex;
   gap: 18px;
   font-size: 0.85rem;
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-links a {
   color: #111827;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 999px;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 4px 0;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--text-main);
-  background-color: rgba(30, 64, 175, 0.45);
+  color: #e11d48;
 }
 
 .nav-cta {
@@ -80,15 +80,15 @@
   justify-content: space-between;
   gap: 48px;
   margin-top: 46px;
-  padding: 40px 38px;
+  padding: 40px 38px 46px;
   border-radius: 32px;
   background: linear-gradient(135deg, #fec6e4, #f973c9);
   box-shadow: 0 26px 60px rgba(244, 63, 94, 0.35);
 }
 
 .hero-photo-card {
-  flex: 0 0 340px;
-  max-width: 360px;
+  flex: 0 0 380px;
+  max-width: 420px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -96,7 +96,7 @@
 
 .hero-photo {
   width: 100%;
-  max-width: 320px;
+  max-width: 380px;
   display: block;
 }
 
@@ -105,11 +105,16 @@
   color: #111827;
 }
 
-.hero-text h1 {
+.hero-heading {
   font-size: clamp(2.4rem, 3.3vw, 3.3rem);
   line-height: 1.05;
   letter-spacing: -0.05em;
   margin: 14px 0 18px;
+  font-family: 'Courier New', ui-monospace, system-ui, sans-serif;
+}
+
+.hero-name {
+  color: #111827;
 }
 
 .highlight {
@@ -137,6 +142,26 @@
   align-items: center;
   gap: 12px;
   margin: 22px 0 20px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 18px;
+  font-size: 0.86rem;
+  margin-top: 28px;
+}
+
+.hero-socials a,
+.hero-socials span {
+  color: #111827;
+}
+
+.hero-socials a {
+  text-decoration: none;
+}
+
+.hero-socials a:hover {
+  text-decoration: underline;
 }
 
 .primary-btn,
