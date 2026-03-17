@@ -235,36 +235,69 @@ function App() {
 
         <motion.section
           id="projects"
-          className="content-section"
+          className="content-section projects-section"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          variants={containerVariants}
+          variants={fadeInUp}
         >
-          {sectionTitle('Value I Bring', 'HIGHLIGHTS')}
-          <div className="cards-grid">
-            <motion.article className="value-card" variants={itemVariants}>
-              <h3>Data-informed decisions</h3>
-              <p>
-                I translate raw data into clear, structured insights that help decision-makers
-                understand what is happening and why it matters.
-              </p>
-            </motion.article>
-            <motion.article className="value-card" variants={itemVariants}>
-              <h3>Organized operations</h3>
-              <p>
-                From document management to reporting workflows, I help bring order, clarity, and
-                repeatability to everyday processes.
-              </p>
-            </motion.article>
-            <motion.article className="value-card" variants={itemVariants}>
-              <h3>Strong communication</h3>
-              <p>
-                I am comfortable working with technical and non-technical stakeholders, ensuring
-                everyone is aligned on goals, timelines, and outcomes.
-              </p>
-            </motion.article>
+          <h2 className="projects-title">My recent projects</h2>
+          <p className="projects-subtitle">
+            Here are some projects where I&apos;ve used research, data and structured documentation
+            to support better decisions and smoother operations.
+          </p>
+
+          <div className="projects-layout">
+            <div className="projects-list">
+              <div className="project-item">
+                <div className="project-line"></div>
+                <h3 className="project-heading">Document workflow improvement – SRMS</h3>
+                <p className="project-text">
+                  Mapped current document handling steps, identified delays and duplicated work,
+                  and supported a new workflow that reduced manual hand‑offs and improved tracking.
+                </p>
+              </div>
+
+              <div className="project-item">
+                <div className="project-line"></div>
+                <h3 className="project-heading">Reporting dashboard support – SRMS</h3>
+                <p className="project-text">
+                  Helped collect and structure operational data, defined simple metrics and created
+                  presentation-ready summaries for management reviews.
+                </p>
+              </div>
+
+              <div className="project-item">
+                <div className="project-line faint"></div>
+                <h3 className="project-heading faint">Service request tracking (concept)</h3>
+                <p className="project-text faint">
+                  Concept for a centralized log of requests, status and owners to make follow‑up
+                  easier for operations and admin teams.
+                </p>
+              </div>
+            </div>
+
+            <div className="projects-card-wrapper">
+              <div className="projects-shapes"></div>
+              <div className="projects-card">
+                <div className="projects-card-header"></div>
+                <div className="projects-card-body">
+                  <h4 className="projects-card-title">Operations dashboard concept</h4>
+                  <p className="projects-card-text">
+                    A simple layout showing incoming requests, processed files and pending tasks to
+                    help managers quickly see where attention is needed.
+                  </p>
+                  <button className="projects-card-btn" type="button">
+                    View details →
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <button className="projects-more" type="button">
+            See more
+          </button>
         </motion.section>
 
         <motion.section
