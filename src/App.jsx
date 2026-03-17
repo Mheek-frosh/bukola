@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import bukImg from './assets/buk.png'
+import whatsappIcon from './assets/whatsapp.png'
 import './App.css'
 
 const containerVariants = {
@@ -435,7 +436,7 @@ function App() {
             window.open(url, '_blank')
           }}
         >
-          🟢
+          <img src={whatsappIcon} alt="Chat on WhatsApp" className="whatsapp-icon-img" />
         </button>
         <input
           className="whatsapp-input"
