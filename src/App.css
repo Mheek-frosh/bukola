@@ -14,9 +14,6 @@
   padding: 14px 0;
   border: none;
   background: transparent;
-  position: sticky;
-  top: 18px;
-  z-index: 10;
 }
 
 .nav-left {
@@ -265,7 +262,7 @@
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .about-card {
