@@ -435,7 +435,7 @@ function App() {
             window.open(url, '_blank')
           }}
         >
-          WA
+          🟢
         </button>
         <input
           className="whatsapp-input"
