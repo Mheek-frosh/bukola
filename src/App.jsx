@@ -98,26 +98,54 @@ function App() {
 
         <motion.section
           id="about"
-          className="content-section"
+          className="content-section about-section"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
         >
-          {sectionTitle('Professional Profile', 'ABOUT')}
           <div className="two-column">
-            <p>
-              I am a Political Science graduate with a strong analytical mindset and a passion for
-              using data to solve real business problems. My experience spans research, data
-              collection, reporting, and supporting digital transformation initiatives in
-              document-driven environments.
-            </p>
-            <p>
-              Currently, I work as a Junior Business Analyst at Secured Records Management Solutions
-              in Abuja, where I support the design and optimization of document workflows. I enjoy
-              collaborating with cross-functional teams, making complex information easy to
-              understand, and turning insights into clear, actionable recommendations.
-            </p>
+            <div className="about-card">
+              <div className="about-photo-bg"></div>
+              <img src={bukImg} alt="Adepoju Bukola" className="about-photo" />
+            </div>
+
+            <div>
+              <h2 className="about-title">About myself</h2>
+              <p className="about-text">
+                I&apos;m a detail-driven Junior Business Analyst with a background in Political
+                Science and a passion for turning research and data into clear, actionable insights.
+                I enjoy simplifying complex processes, improving the way teams work, and making sure
+                decisions are backed by reliable information.
+              </p>
+              <p className="about-text">
+                From document management systems to internal reporting, I focus on understanding
+                how people work, where the bottlenecks are, and what changes will truly make their
+                day-to-day easier.
+              </p>
+
+              <div className="about-stats">
+                <div className="stat-card">
+                  <span className="stat-number">1+</span>
+                  <span className="stat-label">Years of experience</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-number">5+</span>
+                  <span className="stat-label">Projects supported</span>
+                </div>
+              </div>
+
+              <div className="about-tools">
+                <p className="tools-title">Tools I use</p>
+                <div className="tools-row">
+                  <span className="tool-pill">Excel</span>
+                  <span className="tool-pill">PowerPoint</span>
+                  <span className="tool-pill">Word</span>
+                  <span className="tool-pill">Teams</span>
+                  <span className="tool-pill">SharePoint</span>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.section>
 
