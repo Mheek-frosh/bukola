@@ -146,22 +146,32 @@
 
 .hero-socials {
   display: flex;
-  gap: 18px;
+  gap: 20px;
   font-size: 0.86rem;
   margin-top: 28px;
 }
 
-.hero-socials a,
-.hero-socials span {
-  color: #111827;
-}
-
 .hero-socials a {
   text-decoration: none;
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .hero-socials a:hover {
   text-decoration: underline;
+}
+
+.icon-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 1px solid #111827;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
 }
 
 .primary-btn,
@@ -248,10 +258,14 @@
 .about-section {
   background-color: #ffffff;
   border-radius: 0;
-  padding: 34px 40px 32px;
-  margin-left: -40px;
-  margin-right: -40px;
+  padding: 34px 56px 32px;
+  margin-left: -56px;
+  margin-right: -56px;
   box-shadow: none;
+}
+
+main {
+  padding-top: 20px;
 }
 
 .about-card {
@@ -454,9 +468,11 @@
 
 .projects-section {
   background-color: #fbeff1;
-  border-radius: 30px;
-  padding: 32px 30px 30px;
-  box-shadow: var(--shadow-soft);
+  border-radius: 0;
+  padding: 32px 56px 30px;
+  margin-left: -56px;
+  margin-right: -56px;
+  box-shadow: none;
   text-align: center;
 }
 

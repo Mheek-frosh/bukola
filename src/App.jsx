@@ -55,7 +55,7 @@ function App() {
           variants={containerVariants}
         >
           <motion.div className="hero-text" variants={itemVariants}>
-            <p className="eyebrow">Junior Business Analyst</p>
+            <p className="eyebrow">Business Analyst</p>
             <h1 className="hero-heading">
               Hi I&apos;m <span className="hero-name">BUKOLA,</span>
               <br />
@@ -80,11 +80,18 @@ function App() {
             </div>
 
             <div className="hero-socials">
-              <a href="mailto:bukolaadepoju0@gmail.com">Email</a>
-              <span>—</span>
-              <span>LinkedIn</span>
-              <span>—</span>
-              <span>Resume</span>
+              <a href="mailto:bukolaadepoju0@gmail.com" className="icon-link email">
+                <span className="icon-circle">@</span>
+                <span>Email</span>
+              </a>
+              <a href="#" className="icon-link linkedin">
+                <span className="icon-circle">in</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" className="icon-link twitter">
+                <span className="icon-circle">t</span>
+                <span>Twitter</span>
+              </a>
             </div>
           </motion.div>
 
