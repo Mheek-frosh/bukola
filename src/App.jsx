@@ -4,6 +4,7 @@ import bukImg from './assets/buk.png'
 import whatsappIcon from './assets/whatsapp.png'
 import './App.css'
 
+// Animation variants for container elements (e.g., sections, wrappers)
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -23,6 +24,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } },
 }
 
+// Reusable section title component to maintain consistency across sections
 const sectionTitle = (title, subtitle) => (
   <div className="section-heading">
     <p className="section-kicker">{subtitle}</p>
@@ -30,9 +32,11 @@ const sectionTitle = (title, subtitle) => (
   </div>
 )
 
+// Main Application Component
 function App() {
   const [whatsAppMessage, setWhatsAppMessage] = useState('')
 
+  // Function to handle sending messages to WhatsApp
   const handleWhatsAppSend = (e) => {
     e.preventDefault()
     if (!whatsAppMessage.trim()) return
@@ -44,6 +48,7 @@ function App() {
 
   return (
     <div className="page">
+      {/* Global Navigation Header */}
       <header className="nav">
         <div className="nav-left">
           <span className="nav-name">BUKOLA</span>
@@ -59,7 +64,9 @@ function App() {
         </a>
       </header>
 
+      {/* Main Content Sections */}
       <main>
+        {/* Hero Section: Landing area displaying core value proposition */}
         <motion.section
           id="hero"
           className="hero-section"
@@ -113,6 +120,7 @@ function App() {
           </motion.div>
         </motion.section>
 
+        {/* About Section: Personal background and skills context */}
         <motion.section
           id="about"
           className="content-section about-section"
@@ -166,6 +174,7 @@ function App() {
           </div>
         </motion.section>
 
+        {/* Experience Section: Professional journey and roles */}
         <motion.section
           id="experience"
           className="content-section"
@@ -210,6 +219,7 @@ function App() {
           </div>
         </motion.section>
 
+        {/* Skills Section: Capabilities and strengths breakdown */}
         <motion.section
           id="skills"
           className="content-section"
@@ -250,6 +260,7 @@ function App() {
           </div>
         </motion.section>
 
+        {/* Projects Section: Highlight of recent analytic/business projects */}
         <motion.section
           id="projects"
           className="content-section projects-section"
@@ -323,6 +334,7 @@ function App() {
           </button>
         </motion.section>
 
+        {/* Education Section: Academic history and certifications */}
         <motion.section
           id="education"
           className="content-section"
@@ -355,6 +367,7 @@ function App() {
           </div>
         </motion.section>
 
+        {/* Contact Section: Form and active contact details */}
         <motion.section
           id="contact"
           className="contact-section"
@@ -420,12 +433,14 @@ function App() {
         </motion.section>
       </main>
 
+      {/* Site Footer */}
       <footer className="footer">
         <span>© {new Date().getFullYear()} Adepoju Bukola</span>
         <span className="footer-dot"></span>
         <span>Designed with care and data.</span>
       </footer>
 
+      {/* Floating WhatsApp Widget for quick contact */}
       <form className="whatsapp-widget" onSubmit={handleWhatsAppSend}>
         <button
           type="button"
@@ -450,6 +465,7 @@ function App() {
         </button>
       </form>
 
+      {/* Scroll to top floating button */}
       <button
         type="button"
         className="scroll-top-btn"
